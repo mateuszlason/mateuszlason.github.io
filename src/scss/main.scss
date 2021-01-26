@@ -1,5 +1,6 @@
 @import "~normalize.css";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto+Mono&display=swap');
 
 body {
   background: #fefe;
@@ -8,4 +9,5 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: Nunito;
 }

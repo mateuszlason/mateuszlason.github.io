@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mateusz Lasoń - bussiness card</title>
-    <meta name="description" content="A site of an aspiring junior frontend developer" />
+    <meta
+      name="description"
+      content="A site of an aspiring junior frontend developer"
+    />
     <!-- Title -->
     <meta property="og:title" content="Mateusz Lasoń - bussiness card" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="A site of an aspiring junior frontend developer: list of completed projects, set of skills and few words about author himself." />
+    <meta
+      property="og:description"
+      content="A site of an aspiring junior frontend developer: list of completed projects, set of skills and few words about author himself."
+    />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
     <meta property="og:url" content="https://mateuszlason.github.io" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
@@ -16,14 +22,69 @@
       property="og:image"
       content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
     />
-
   </head>
-  <body>
-    <div class="hero"><img class="hero__pic" src="#" alt="Mateusz Lasoń's profile picture" />Hey there!<span class="hero__bubble hero__bubble--js">👋</span></div>
-  <article class="intro">
-  <!-- need :before n' :after -->
-<h1 class="intro__heading">My name is Mateusz and I'm looking forward to my first job as a Frontend developer. Huge LoTR fan btw.</h1>
-  <p class="intro__paragraph">You might be interested in checking the list of <a class="intro__link" href="#">my skills</a>. Don’t forget to have a glimpse at <a class="intro__link" href="#">my projects</a>. Currently I’m looking for a new challenges so if you have one - <a class="intro__link" href="#">contact me 😊</a></p>
-<a class="intro__mailto" href="mailto:matlason@outlook.com">mat.lason@outlook.com</a>
-</article></body>
+  <body><main>
+    <section class="intro">
+    <div class="intro__img-container">
+      <img class="intro__pic" src="#" alt="Mateusz Lasoń's profile photo" />Hey
+      there!<span class="intro__bubble intro__bubble--js">👋</span>
+    </div>
+    <div class="intro__description">
+      <!-- need :before n' :after -->
+      <h1 class="intro__heading">
+        My name is Mateusz and I'm looking forward to my first job as a Frontend
+        developer. Huge LoTR fan btw.
+      </h1>
+      <p class="intro__paragraph">
+        You might be interested in checking the list of
+        <a class="intro__link" href="#">my skills</a>. Don’t forget to have a
+        glimpse at <a class="intro__link" href="#">my projects</a>. Currently
+        I’m looking for a new challenges so if you have one -
+        <a class="intro__link" href="#">contact me 😊</a>
+      </p>
+      <a class="intro__mailto" href="mailto:matlason@outlook.com"
+        >mat.lason@outlook.com</a
+      ></div>
+    </section>
+    <section class="myskills">
+      <h2 class="myskills__heading">My skills</h2>
+      <article class="myskills-tree">
+        <span class="myskills-tree__icon">💪</span>
+        <h3 class="myskills-tree__heading">Working knowledge</h3>
+      <ul class="myskills-list">
+        <li class="myskills-list__item">Skill1</li>
+        <li class="myskills-list__item">Skill2</li>
+        <li class="myskills-list__item">Skill3</li>
+        <li class="myskills-list__item">Skill4</li>
+        <li class="myskills-list__item">Skill5</li>
+      </ul>
+      </article>
+      <article class="myskills-tree">
+        <span class="myskills-tree__icon">🤔</span>
+        <h3 class="myskills-tree__heading">Know something about</h3>
+        <ul class="myskills-list">
+          <li class="myskills-list__item">Skill1</li>
+          <li class="myskills-list__item">Skill2</li>
+          <li class="myskills-list__item">Skill3</li>
+          <li class="myskills-list__item">Skill4</li>
+          <li class="myskills-list__item">Skill5</li>
+        </ul>
+      </article>
+      <article class="myskills-tree">
+        <span class="myskills-tree__icon">🎓</span>
+        <h3 class="myskills-tree__heading">Want to learn</h3>
+        <ul class="myskills-list">
+          <li class="myskills-list__item">Skill1</li>
+          <li class="myskills-list__item">Skill2</li>
+          <li class="myskills-list__item">Skill3</li>
+          <li class="myskills-list__item">Skill4</li>
+          <li class="myskills-list__item">Skill5</li>
+        </ul>
+      </article>
+    </section>
+    <section class="">
+      
+    </section>
+  </main>
+  </body>
 </html>
