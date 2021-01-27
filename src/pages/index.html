@@ -8,14 +8,11 @@
       name="description"
       content="A site of an aspiring junior frontend developer"
     />
-    <!-- Title -->
     <meta property="og:title" content="Mateusz Lasoń - bussiness card" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
     <meta
       property="og:description"
       content="A site of an aspiring junior frontend developer: list of completed projects, set of skills and few words about author himself."
     />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
     <meta property="og:url" content="https://mateuszlason.github.io" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta
@@ -23,68 +20,161 @@
       content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
     />
   </head>
-  <body><main>
-    <section class="intro">
-    <div class="intro__img-container">
-      <img class="intro__pic" src="#" alt="Mateusz Lasoń's profile photo" />Hey
-      there!<span class="intro__bubble intro__bubble--js">👋</span>
-    </div>
-    <div class="intro__description">
-      <!-- need :before n' :after -->
-      <h1 class="intro__heading">
-        My name is Mateusz and I'm looking forward to my first job as a Frontend
-        developer. Huge LoTR fan btw.
-      </h1>
-      <p class="intro__paragraph">
-        You might be interested in checking the list of
-        <a class="intro__link" href="#">my skills</a>. Don’t forget to have a
-        glimpse at <a class="intro__link" href="#">my projects</a>. Currently
-        I’m looking for a new challenges so if you have one -
-        <a class="intro__link" href="#">contact me 😊</a>
-      </p>
-      <a class="intro__mailto" href="mailto:matlason@outlook.com"
-        >mat.lason@outlook.com</a
-      ></div>
-    </section>
-    <section class="myskills">
-      <h2 class="myskills__heading">My skills</h2>
-      <article class="myskills-tree">
-        <span class="myskills-tree__icon">💪</span>
-        <h3 class="myskills-tree__heading">Working knowledge</h3>
-      <ul class="myskills-list">
-        <li class="myskills-list__item">Skill1</li>
-        <li class="myskills-list__item">Skill2</li>
-        <li class="myskills-list__item">Skill3</li>
-        <li class="myskills-list__item">Skill4</li>
-        <li class="myskills-list__item">Skill5</li>
-      </ul>
-      </article>
-      <article class="myskills-tree">
-        <span class="myskills-tree__icon">🤔</span>
-        <h3 class="myskills-tree__heading">Know something about</h3>
-        <ul class="myskills-list">
-          <li class="myskills-list__item">Skill1</li>
-          <li class="myskills-list__item">Skill2</li>
-          <li class="myskills-list__item">Skill3</li>
-          <li class="myskills-list__item">Skill4</li>
-          <li class="myskills-list__item">Skill5</li>
-        </ul>
-      </article>
-      <article class="myskills-tree">
-        <span class="myskills-tree__icon">🎓</span>
-        <h3 class="myskills-tree__heading">Want to learn</h3>
-        <ul class="myskills-list">
-          <li class="myskills-list__item">Skill1</li>
-          <li class="myskills-list__item">Skill2</li>
-          <li class="myskills-list__item">Skill3</li>
-          <li class="myskills-list__item">Skill4</li>
-          <li class="myskills-list__item">Skill5</li>
-        </ul>
-      </article>
-    </section>
-    <section class="">
-      
-    </section>
-  </main>
+  <body>
+    <main>
+      <section class="intro">
+        <div class="intro__img-container">
+          <img
+            class="intro__pic"
+            src="#"
+            alt="Mateusz Lasoń's profile photo"
+          />Hey there!<span class="intro__bubble intro__bubble--js">👋</span>
+        </div>
+        <div class="intro__description">
+          <!-- need :before n' :after -->
+          <h1 class="intro__heading">
+            My name is Mateusz and I'm looking forward to my first job as a
+            Frontend developer. Huge LoTR fan btw.
+          </h1>
+          <p class="intro__paragraph">
+            You might be interested in checking the list of
+            <a class="intro__link" href="#myskills">my skills</a>. Don’t forget
+            to have a glimpse at
+            <a class="intro__link" href="#projects">my projects</a>. Currently
+            I’m looking for a new challenges so if you have one -
+            <a class="intro__link" href="#contact">contact me</a> 😊
+          </p>
+          <a class="intro__mailto" href="mailto:matlason@outlook.com"
+            >mat.lason@outlook.com</a
+          >
+        </div>
+      </section>
+      <section class="myskills" id="myskills">
+        <h2 class="myskills__heading">My skills</h2>
+        <article class="myskills-tree">
+          <span class="myskills-tree__icon">💪</span>
+          <h3 class="myskills-tree__heading">Working knowledge</h3>
+          <ul class="myskills-list">
+            <li class="myskills-list__item">Skill1</li>
+            <li class="myskills-list__item">Skill2</li>
+            <li class="myskills-list__item">Skill3</li>
+            <li class="myskills-list__item">Skill4</li>
+            <li class="myskills-list__item">Skill5</li>
+          </ul>
+        </article>
+        <article class="myskills-tree">
+          <span class="myskills-tree__icon">🤔</span>
+          <h3 class="myskills-tree__heading">Know something about</h3>
+          <ul class="myskills-list">
+            <li class="myskills-list__item">Skill1</li>
+            <li class="myskills-list__item">Skill2</li>
+            <li class="myskills-list__item">Skill3</li>
+            <li class="myskills-list__item">Skill4</li>
+            <li class="myskills-list__item">Skill5</li>
+          </ul>
+        </article>
+        <article class="myskills-tree">
+          <span class="myskills-tree__icon">🎓</span>
+          <h3 class="myskills-tree__heading">Want to learn</h3>
+          <ul class="myskills-list">
+            <li class="myskills-list__item">Skill1</li>
+            <li class="myskills-list__item">Skill2</li>
+            <li class="myskills-list__item">Skill3</li>
+            <li class="myskills-list__item">Skill4</li>
+            <li class="myskills-list__item">Skill5</li>
+          </ul>
+        </article>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="projects__heading">Recent projects</h2>
+        <p class="projects__paragraph">
+          I started my frontend developer path in 2003. Since then, I’ve built
+          some projects. Here’s the list of the things I’ve done so far.
+        </p>
+        <div class="projects-grid">
+          <article class="projects-grid__item">
+            <span class="projects-grid__giticon"></span>
+            <span>project:</span><span>project1</span> <span>description:</span
+            ><span>description1</span> <span>demo:</span
+            ><span
+              >&lt;<a href="#" title="Link to project1's site.">see here</a
+              >&gt;</span
+            >
+            <span>github:</span
+            ><span
+              >&lt;<a href="#" title="Link to project1's repository"
+                >source code</a
+              >&gt;</span
+            >
+          </article>
+          <article class="projects-grid__item">
+            <span class="projects-grid__giticon"></span>
+            <span>project:</span><span>project2</span> <span>description:</span
+            ><span>description2</span> <span>demo:</span
+            ><span
+              >&lt;<a href="#" title="Link to project2's site.">see here</a
+              >&gt;</span
+            >
+            <span>github:</span
+            ><span
+              >&lt;<a href="#" title="Link to project2's repository"
+                >source code</a
+              >&gt;</span
+            >
+          </article>
+          <article class="projects-grid__item">
+            <span class="projects-grid__giticon"></span>
+            <span>project:</span><span>project3</span> <span>description:</span
+            ><span>description3</span> <span>demo:</span
+            ><span
+              >&lt;<a href="#" title="Link to project3's site.">see here</a
+              >&gt;</span
+            >
+            <span>github:</span
+            ><span
+              >&lt;<a href="#" title="Link to project3's repository"
+                >source code</a
+              >&gt;</span
+            >
+          </article>
+          <article class="projects-grid__item">
+            <span class="projects-grid__giticon"></span>
+            <span>project:</span><span>project5</span> <span>description:</span
+            ><span>description5</span> <span>demo:</span
+            ><span
+              >&lt;<a href="#" title="Link to project4's site.">see here</a
+              >&gt;</span
+            >
+            <span>github:</span
+            ><span
+              >&lt;<a href="#" title="Link to project4's repository"
+                >source code</a
+              >&gt;</span
+            >
+          </article>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact__heading">Contact me</h2>
+        <p class="contact__paragraph">
+          I'm open for new opportunities. If you have one for me we should talk!
+        </p>
+        <div class="contact-container">
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="#" title="Github profile link"><img src="#" alt="Github icon" /></a> 
+            </li>
+            <li class="socials__item"><a href="#" title="Instagram profile link">
+              <img src="#" alt="Instagram icon" />
+            </a></li>
+            <li class="socials__item"><a href="#" title="Facebook profile link">
+              <img src="#" alt="Facebook icon" />
+            </a></li>
+          </ul>
+          <a class="contact__mailto" href="mailto:matlason@outlook.com"
+            >mat.lason@outlook.com</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
