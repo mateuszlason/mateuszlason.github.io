@@ -1,7 +1,9 @@
 @import "~normalize.css";
 @import "_variables";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto+Mono&display=swap");
-
+@import "intro.scss";
+@import "myskills.scss";
+@import "contact.scss";
 html {
   box-sizing: border-box;
 }
@@ -9,7 +11,7 @@ html {
 *,
 *:before,
 *:after {
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -19,6 +21,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: Nunito;
+  font-style: normal;
 }
 
 .main {
@@ -27,71 +30,9 @@ body {
 }
 
 section {
-  margin: 64px 0 88px;
-}
-
-.intro {
+  padding: 64px 0 88px;
   display: flex;
   justify-items: center;
   align-items: center;
   flex-direction: column;
-  &__img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  &__pic {
-    border: 16px solid #f6f9fd;
-    border-radius: 50%;
-    width: 104px;
-    height: 104px;
-    box-sizing: unset;
-  }
-  &__bubble {
-    display: none;
-  }
-  &__heading {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 38px;
-    text-align: center;
-    color: #234361;
-  }
-
-  &__description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  &__special-text {
-    color: #1070ca;
-  }
-
-  &__link {
-    font-weight: bold;
-    color: #4da8ff;
-    text-decoration: none;
-  }
-  &__paragraph {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
-    text-align: center;
-    color: #425a70;
-  }
-  &__mailto {
-    background: #4da8ff;
-    padding: 4px 24px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 40px;
-    align-items: center;
-    color: white;
-    border-radius: 64px;
-    text-decoration: none;
-  }
 }

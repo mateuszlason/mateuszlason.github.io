@@ -1,0 +1,61 @@
+.intro {
+  
+  &__img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__pic {
+    border: 16px solid $blueLgths;
+    border-radius: 50%;
+    width: 104px;
+    height: 104px;
+    box-sizing: unset;
+  }
+  &__bubble {
+    display: none;
+  }
+  &__heading {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    color: $textDark;
+    margin: 24px 0 16px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__special-text {
+    color: $blue;
+  }
+
+  &__link {
+    font-weight: bold;
+    color: $link;
+    text-decoration: none;
+  }
+  &__paragraph {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: $textDflt;
+    margin: 0;
+  }
+  &__mailto {
+    background: $link;
+    padding: 4px 24px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    border-radius: 64px;
+    text-decoration: none;
+    margin-top: 48px;
+  }
+}
