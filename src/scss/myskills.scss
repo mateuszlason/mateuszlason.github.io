@@ -29,21 +29,36 @@
   &-list {
     align-self: flex-start;
     color: $blueLight;
-    list-style-image: url("/src/assets/img/liststyle.svg");
+    position: relative;
     &__item {
       font-weight: 600;
       font-size: 16px;
       line-height: 24px;
-   padding-left:20px;
+      padding-left:20px;
+      margin: 0 0 16px;
+    }
+    &__first {
+      list-style-image: url("/src/assets/img/liststyle.svg");
+    }
+    &__second {
+      list-style-image: url("/src/assets/img/liststyleblue.svg");
     }
 
-    &.second {
-      list-style-type:none;
-    }
-
-    &.third {
+    &__third {
 font-size:10px;
-list-style-type: disc;
-    }
+list-style-type: none;
+
+    
+    & li:before {
+      content: "";
+      position: absolute;
+      display:block;
+      height:12px;
+      width:12px;
+      background-color:$blueLight;
+      border-radius:50%;
+      left:0;
+      top:8px;
+          }}
   }
 }
