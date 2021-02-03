@@ -7,6 +7,7 @@
     font-size: 36px;
     line-height: 48px;
     color: white;
+    margin:0;
   }
 
   &-tree {
@@ -15,7 +16,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-
+    margin-top:64px;
     &__icon {
       font-size: 64px;
       line-height: 72px;
@@ -23,6 +24,9 @@
 
     &__heading {
       color: white;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 44px;
     }
   }
 
@@ -30,11 +34,12 @@
     align-self: flex-start;
     color: $blueLight;
     position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0 0 0;
     &__item {
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 24px;
-      padding-left:20px;
+      padding-left: 12px;
       margin: 0 0 16px;
     }
     &__first {
@@ -45,20 +50,25 @@
     }
 
     &__third {
-font-size:10px;
-list-style-type: none;
-
-    
-    & li:before {
-      content: "";
-      position: absolute;
-      display:block;
-      height:12px;
-      width:12px;
-      background-color:$blueLight;
-      border-radius:50%;
-      left:0;
-      top:8px;
-          }}
+      list-style-type: none;
+      padding: 0;
+      & li.myskills-list__item {
+        padding-left:0px;
+      &:before {
+        content: "";
+    display: inline-flex;
+    height: 2px;
+    width: 2px;
+    background-color: #DBEAF7;
+    border-radius: 50%;
+    margin-left:28px;
+    margin-right:22px;
+    vertical-align: super;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+      }
+    }
   }
+}
 }

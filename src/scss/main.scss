@@ -25,12 +25,12 @@ body {
 }
 
 .main {
-  padding: 0 16px;
   max-width: 320px;
 }
 
 section {
-  padding: 64px 0 88px;
+  padding-top:64px;
+  padding-bottom:88px;
   display: flex;
   justify-items: center;
   align-items: center;
