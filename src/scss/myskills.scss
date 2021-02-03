@@ -7,7 +7,7 @@
     font-size: 36px;
     line-height: 48px;
     color: white;
-    margin:0;
+    margin: 0;
   }
 
   &-tree {
@@ -16,7 +16,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top:64px;
+    margin-top: 64px;
+    max-width:320px;
     &__icon {
       font-size: 64px;
       line-height: 72px;
@@ -53,22 +54,22 @@
       list-style-type: none;
       padding: 0;
       & li.myskills-list__item {
-        padding-left:0px;
-      &:before {
-        content: "";
-    display: inline-flex;
-    height: 2px;
-    width: 2px;
-    background-color: #DBEAF7;
-    border-radius: 50%;
-    margin-left:28px;
-    margin-right:22px;
-    vertical-align: super;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
+        padding-left: 0px;
+        &:before {
+          content: "";
+          display: inline-flex;
+          height: 2px;
+          width: 2px;
+          background-color: #dbeaf7;
+          border-radius: 50%;
+          margin-left: 28px;
+          margin-right: 22px;
+          vertical-align: super;
+          align-self: center;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }
-}
 }

@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto+Mono&display=swap");
 @import "intro.scss";
 @import "myskills.scss";
+@import "projects.scss";
 @import "contact.scss";
 html {
   box-sizing: border-box;
@@ -25,7 +26,8 @@ body {
 }
 
 .main {
-  max-width: 320px;
+  min-width: 320px;
+  max-width:720px;
 }
 
 section {
