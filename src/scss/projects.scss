@@ -2,7 +2,7 @@
   padding-left: 16px;
   padding-right: 16px;
   &__link {
-      color:$gitLink;
+    color: $gitLink;
   }
   &__content {
     padding: 24px 16px 24px 16px;
@@ -19,6 +19,8 @@
     font-size: 16px;
     line-height: 32px;
     color: $textDflt;
+    text-align: center;
+    margin:32px 0 46px;
   }
   &-grid {
     font-family: Roboto Mono;
@@ -32,7 +34,7 @@
       font-weight: normal;
       font-size: 13px;
       line-height: 24px;
-      margin:24px 0 8px;
+      margin: 24px 0 8px;
       & span {
         &:first-child {
           text-align: right;
@@ -52,10 +54,10 @@
       font-weight: normal;
       font-size: 13px;
       line-height: 24px;
-        margin: 0 0 8px;
-        &:first-of-type {
-            margin-bottom:24px;
-        }
+      margin: 0 0 8px;
+      &:first-of-type {
+        margin-bottom: 24px;
+      }
       & span:first-child {
         text-align: right;
         color: $gitGreyLight;
