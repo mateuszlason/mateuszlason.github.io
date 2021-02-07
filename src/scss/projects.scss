@@ -1,9 +1,6 @@
 .projects {
   padding-left: 16px;
   padding-right: 16px;
-  &__link {
-    color: $gitLink;
-  }
   &__content {
     padding: 24px 16px 24px 16px;
   }
@@ -13,6 +10,9 @@
     line-height: 48px;
     color: $textDark;
     margin: 0;
+  }
+  &__link {
+    color: $gitLink;
   }
   &__paragraph {
     font-weight: 300;
@@ -26,44 +26,22 @@
     font-family: Roboto Mono;
     min-width: 288px;
     width: 100%;
-
+    display: block;
+    
+@media (min-width:$tablet)  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:24px;
+}
     &__heading {
-      display: grid;
-      grid-template-columns: 102px 1fr;
-      column-gap: 4px;
-      font-weight: normal;
-      font-size: 13px;
-      line-height: 24px;
-      margin: 24px 0 8px;
+      &.projects-grid__text {
+        margin-top:24px;
+      }
       & span {
-        &:first-child {
-          text-align: right;
-          color: $gitGreyLight;
-        }
         &:nth-child(2) {
           font-weight: bold;
           color: white;
         }
-      }
-    }
-
-    &__text {
-      display: grid;
-      grid-template-columns: 102px 1fr;
-      column-gap: 4px;
-      font-weight: normal;
-      font-size: 13px;
-      line-height: 24px;
-      margin: 0 0 8px;
-      &:first-of-type {
-        margin-bottom: 24px;
-      }
-      & span:first-child {
-        text-align: right;
-        color: $gitGreyLight;
-      }
-      & span:nth-child(2) {
-        color: $gitGreyLghtst;
       }
     }
     &__item {
@@ -90,6 +68,23 @@
         align-items: center;
         background: $gitGreyDrkst;
         padding-left: 16px;
+      }
+    }
+    &__text {
+      display: grid;
+      grid-template-columns: 102px 1fr;
+      column-gap: 4px;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 24px;
+      margin: 0 0 8px;
+      color: $gitGreyLghtst;
+    &:nth-child(3) {
+      margin-bottom:24px;
+    }
+      & span:first-child {
+        text-align: right;
+        color: $gitGreyLight;
       }
     }
   }
