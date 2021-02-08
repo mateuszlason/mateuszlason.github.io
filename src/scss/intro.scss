@@ -1,10 +1,27 @@
 .intro {
-  padding-left:16px;
-  padding-right:16px;
+  padding-left: 16px;
+  padding-right: 16px;
   max-width: $tablet;
   margin: 0 auto;
+
   &__bubble {
     display: none;
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $blue;
+      position:absolute;
+      top:-20px;
+      left:160px;
+      width: 230px;
+      height: 72px;
+      color: white;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      border-radius: 16px;
+    }
   }
   &__description {
     display: flex;
@@ -24,6 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position:relative;
   }
   &__link {
     font-weight: bold;
