@@ -3,24 +3,38 @@
   padding-right: 16px;
   max-width: $tablet;
   margin: 0 auto;
-
+  
+  @media (min-width: $desktop) {
+  max-width: 982px;
+}
   &__bubble {
+    position: absolute;
+  }
+  &__greet {
     display: none;
-    @media (min-width: $tablet) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    @media (min-width: $desktop) {
+      display: block;
       background: $blue;
-      position:absolute;
-      top:-20px;
-      left:160px;
-      width: 230px;
-      height: 72px;
+      position: relative;
+      top: -105px;
+      left: calc(50% + 90px);
+      padding: 16px 19px;
       color: white;
       font-weight: bold;
       font-size: 32px;
       line-height: 40px;
       border-radius: 16px;
+      white-space: nowrap;
+      &:after {
+        content: "";
+        display: block;
+        background: url(../assets/img/bubble_tail.svg);
+        position: absolute;
+        width: 17.42px;
+        height: 22.66px;
+        top: 100%;
+        left: 32px;
+      }
     }
   }
   &__description {
@@ -36,12 +50,17 @@
     text-align: center;
     color: $textDark;
     margin: 24px 0 16px;
+    @media (min-width: $desktop) {
+      font-size: 32px;
+      line-height: 40px;
+      margin: 48px 0 24px;
+    }
   }
   &__img-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    position:relative;
+    position: relative;
   }
   &__link {
     font-weight: bold;
@@ -58,6 +77,9 @@
     border-radius: 64px;
     text-decoration: none;
     margin-top: 48px;
+    @media (min-width: $desktop) {
+      margin-top: 68px;
+    }
   }
   &__paragraph {
     font-weight: 300;
@@ -66,13 +88,22 @@
     text-align: center;
     color: $textDflt;
     margin: 0;
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
   &__pic {
     border: 16px solid $blueLgths;
     border-radius: 50%;
-    width: 104px;
-    height: 104px;
+    width: 96px;
+    height: 96px;
     box-sizing: unset;
+    @media (min-width: $desktop) {
+      width: 178px;
+      height: 178px;
+      border: 24px solid $blueLgths;
+    }
   }
   &__special-text {
     color: $blue;
