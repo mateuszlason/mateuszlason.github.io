@@ -1,6 +1,18 @@
 .myskills {
   background-color: $blue;
 
+  &__tree {
+    @media (min-width: $desktop) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+      max-width: 1184px;
+      width: 100%;
+      margin: 128px auto 0 auto;
+      
+    }
+  }
+
   &__heading {
     font-family: Nunito;
     font-weight: bold;
@@ -8,6 +20,32 @@
     line-height: 48px;
     color: white;
     margin: 0;
+    @media (min-width: $desktop) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  &-branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 64px;
+    margin: 0 auto;
+    max-width: 320px;
+
+    &__heading {
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 44px;
+    }
+    &__icon {
+      font-size: 64px;
+      line-height: 72px;
+    }
   }
 
   &-list {
@@ -26,7 +64,7 @@
       padding-left: 12px;
       margin: 0 0 16px;
     }
-    
+
     &__second {
       list-style-image: url("/src/assets/img/liststyleblue.svg");
     }
@@ -49,27 +87,6 @@
           align-items: center;
         }
       }
-    }
-  }
-
-  &-tree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 64px;
-    max-width:320px;
-
-    &__heading {
-      color: white;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 44px;
-    }
-    &__icon {
-      font-size: 64px;
-      line-height: 72px;
     }
   }
 }
