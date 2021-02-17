@@ -5,8 +5,10 @@
 @import "myskills.scss";
 @import "projects.scss";
 @import "contact.scss";
+@import "animations.scss";
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,

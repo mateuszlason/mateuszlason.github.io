@@ -2,7 +2,10 @@
   padding-left: 16px;
   padding-right: 16px;
   &__content {
-    padding: 24px 16px 24px 16px;
+    padding: 24px 16px;
+    @media (min-width: $desktop) {
+      padding: 24px 48px;
+    }
   }
   &__heading {
     font-weight: bold;
@@ -10,6 +13,10 @@
     line-height: 48px;
     color: $textDark;
     margin: 0;
+    @media (min-width: $desktop) {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
   &__link {
     color: $gitLink;
@@ -20,7 +27,14 @@
     line-height: 32px;
     color: $textDflt;
     text-align: center;
-    margin:32px 0 46px;
+    margin: 32px 0 46px;
+    max-width: 615px;
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+      margin: 40px 0 128px;
+      max-width:782px;
+    }
   }
   &-grid {
     font-family: Roboto Mono;
@@ -30,16 +44,19 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-@media (min-width:$tablet)  {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap:24px;
-  max-width: $desktop;
-}
+
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: $desktop;
+    }
+    @media (min-width: $desktop) {
+      max-width: 1184px;
+    }
     &__heading {
       &.projects-grid__text {
-        margin-top:24px;
+        margin-top: 24px;
       }
       & span {
         &:nth-child(2) {
@@ -52,11 +69,12 @@
       border-radius: 16px;
       width: 100%;
       max-width: 520px;
-      height: 320px;
+      height: 324px;
       background-color: $gitGreyDark;
       margin-bottom: 24px;
       @media (min-width: $tablet) {
         margin: 0 auto;
+        max-width: 580px;
       }
       &--mac-button {
         display: inline-flex;
@@ -84,9 +102,9 @@
       line-height: 24px;
       margin: 0 0 8px;
       color: $gitGreyLghtst;
-    &:nth-child(3) {
-      margin-bottom:24px;
-    }
+      &.projects-grid__gap {
+        margin-bottom:24px;
+      }
       & span:first-child {
         text-align: right;
         color: $gitGreyLight;

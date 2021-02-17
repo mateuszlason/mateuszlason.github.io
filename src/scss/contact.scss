@@ -8,6 +8,10 @@
     line-height: 48px;
     color: $textDark;
     margin: 0;
+    @media (min-width: $desktop) {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
   &__paragraph {
     font-weight: 300;
@@ -16,12 +20,22 @@
     color: $textDflt;
     text-align: center;
     margin: 32px 0 56px;
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+      margin: 40px 0 128px;
+    }
   }
   &-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      width:580px;
+    }
   }
   &__mailto {
     display: block;
@@ -34,6 +48,10 @@
     border-radius: 64px;
     text-decoration: none;
     margin-top: 64px;
+    text-align:center;
+    @media (min-width: $desktop) {
+    margin: 0;
+    }
   }
 }
 .socials {

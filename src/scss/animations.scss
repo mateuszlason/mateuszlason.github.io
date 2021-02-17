@@ -1,0 +1,19 @@
+
+@keyframes waving {
+    0% {transform:scale(0.95);}
+    30% {transform: rotate(15deg) scale(1.05);}
+    40% {transform: rotate(-21deg);}
+    50% {transform: rotate(21deg);}
+    60% {transform: rotate(-21deg);}
+    70% {transform: rotate(21deg);}
+    100% {transform:scale(0.95);}
+
+}
+
+
+
+.wave {
+    animation: waving 2.5s ease-in-out infinite;
+    transform-origin: center bottom;
+    display:inline-block;
+}

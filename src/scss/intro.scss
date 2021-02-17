@@ -5,8 +5,8 @@
   margin: 0 auto;
 
   @media (min-width: $desktop) {
-  max-width: 982px;
-}
+    max-width: 982px;
+  }
   &__bubble {
     position: absolute;
   }
@@ -44,21 +44,23 @@
     justify-content: center;
     position: relative;
     @media (min-width: $desktop) {
-      max-width: 806px;
-      &:before, &:after {
+      max-width: 780px;
+      &:before,
+      &:after {
         content: "";
         display: block;
-        width: 83.23px;
-        height: 254.88px;
-        position:absolute;
+        width: 83px;
+        height: 255px;
+        position: absolute;
+        top: 0;
       }
       &:before {
-      right:100%;
-      background: url(../assets/img/brace_left.svg);
-    }
+        right: 100%;
+        background: url(../assets/img/brace_left.svg);
+      }
       &:after {
         background: url(../assets/img/brace_right.svg);
-        left:100%;
+        left: 100%;
       }
     }
   }
@@ -68,11 +70,11 @@
     line-height: 32px;
     text-align: center;
     color: $textDark;
-    margin: 24px 0 16px;
+    margin: 0 0 16px;
     @media (min-width: $desktop) {
       font-size: 32px;
       line-height: 40px;
-      margin: 48px 0 24px;
+      margin: 0 0 24px;
     }
   }
   &__img-container {
@@ -80,11 +82,16 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 24px;
+    @media (min-width: $desktop) {
+      margin-bottom: 48px;
+    }
   }
   &__link {
     font-weight: bold;
     color: $link;
     text-decoration: none;
+    white-space: nowrap;
   }
   &__mailto {
     background: $link;
@@ -96,6 +103,7 @@
     border-radius: 64px;
     text-decoration: none;
     margin-top: 48px;
+    text-align: center;
     @media (min-width: $desktop) {
       margin-top: 68px;
     }
@@ -126,6 +134,6 @@
   }
   &__special-text {
     color: $blue;
-    white-space:nowrap;
+    white-space: nowrap;
   }
 }
