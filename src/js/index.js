@@ -16,7 +16,7 @@ fetch('https://api.github.com/users/mateuszlason/repos?sort=fullname&direction=a
           <span class="projects-grid__item--mac-button"></span>
         </div>
         <div class="projects__content">
-          <img src="/public/giticon.svg" title="github icon" />
+          <img src="img/giticon.svg" title="github icon" />
           <h3 class="projects-grid__heading projects-grid__text"><span>project:</span><span>${name}</span></h3>
           <p class="projects-grid__text projects-grid__gap"><span>description:</span><span>${description}</span> </p>
           <p class="projects-grid__text"><span>demo:</span><span>&lt;<a class="projects__link" href="${homepage}" title="Link to ${name} site.">see here</a>&gt;</span></p>
