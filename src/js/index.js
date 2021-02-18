@@ -19,8 +19,8 @@ fetch('https://api.github.com/users/mateuszlason/repos?sort=fullname&direction=a
           <img src="img/giticon.svg" title="github icon" />
           <h3 class="projects-grid__heading projects-grid__text"><span>project:</span><span>${name}</span></h3>
           <p class="projects-grid__text projects-grid__gap"><span>description:</span><span>${description}</span> </p>
-          <p class="projects-grid__text"><span>demo:</span><span>&lt;<a class="projects__link" href="${homepage}" title="Link to ${name} site.">see here</a>&gt;</span></p>
-          <p class="projects-grid__text"><span>github:</span><span>&lt;<a class="projects__link" href="${html_url}" title="Link to ${name} repository">source code</a>&gt;</span></p>
+          <p class="projects-grid__text"><span>demo:</span><span>&lt;<a class="projects__link" href="${homepage}" title="Link to ${name} site." rel="noopener noreferrer" target="_blank">see here</a>&gt;</span></p>
+          <p class="projects-grid__text"><span>github:</span><span>&lt;<a class="projects__link" href="${html_url}" title="Link to ${name} repository" rel="noopener noreferrer" target="_blank">source code</a>&gt;</span></p>
       </div>
       </article>` ;
         cage.innerHTML += template;
